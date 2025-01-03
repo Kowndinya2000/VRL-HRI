@@ -216,7 +216,8 @@ def _spawn_from_usd_file(
     print("---[DEBUG@KOWNDI] usd_path:", usd_path)
     if "ur5e" in usd_path:
         # usd_path = "/home/kowndi/Documents/Isaac_Sim_Learning/Assets/4.2/ur5e/ur5e.usd"
-        usd_path = "https://content-production.omniverse.nvidia.com/Assets/Isaac/2023.1.1/Isaac/Robots/UniversalRobots/ur5e/ur5e.usd"
+        # usd_path = "https://content-production.omniverse.nvidia.com/Assets/Isaac/2023.1.1/Isaac/Robots/UniversalRobots/ur5e/ur5e.usd"
+        usd_path = '/home/kowndi/Documents/Isaac_Sim_Learning/Dynamic_HRI/RL_Lab/ur5e_simplified_gripper/ur5e_simplified_gripper.usd'
     if not stage.ResolveIdentifierToEditTarget(usd_path):
         raise FileNotFoundError(f"USD file not found at path: '{usd_path}'.")
     # spawn asset if it doesn't exist.
